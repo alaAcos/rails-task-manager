@@ -4,5 +4,6 @@ Rails.application.routes.draw do
     get '/tasks', to: 'tasks#list'
     get '/tasks/:id', to: 'tasks#find'
     get '/new', to: 'tasks#new'
+    post '/tasks', to: 'tasks#create'
   end
 end
