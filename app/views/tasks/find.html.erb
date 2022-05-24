@@ -8,4 +8,6 @@
   <p>This taks not has been completed.</p>
 <%end%>
 
-<%=link_to 'Back to list', '/tasks'%>
+<p><%=link_to 'Edit this task', '/tasks/' + @task.id.to_s + '/edit'%></p></p>
+
+<p><%=link_to 'Back to list', '/tasks'%></p>
