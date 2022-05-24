@@ -1,5 +1,5 @@
 class AddCompletedToTasks < ActiveRecord::Migration[6.1]
   def change
-    t.boolean :completed, default: false
+    add_column :tasks, :completed, :boolean, default: false
   end
 end
